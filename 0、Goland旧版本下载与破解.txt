@@ -1,0 +1,7 @@
+Goland的旧版本在这里下载     https://www.jetbrains.com/go/download  或  https://www.jetbrains.com.cn/go/download/other.html
+
+ide-eval-resetter  是Goland 2020.03版本及以前版本的无限重置试用期的插件，
+	1、File--Settings--Plugins--Installed右边的小齿轮--ManagePluginRepositories--在弹框中添加https://plugins.zhile.io
+	2、File--Settings--Plugins--Marketplace--搜索IDE Eval Reset--点击Install
+	3、Help--点击Eval Reset（如果没有，则重复1、2步骤）--勾选 auto reset before per restart -- 点击Reset按钮退出弹框
+	4、Help--点击Register--如果弹窗中出现 30 days left 证明成功了。

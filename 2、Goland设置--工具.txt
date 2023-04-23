@@ -1,0 +1,18 @@
+1、代码区的font设置
+     1.1手动设置
+	Editor ----> Color Scheme ----> Color Scheme Font 
+     1.2快捷键设置
+	KeyMap ----> 在输入框输入font，找到 Decrease Font Size 和 Increase Font Size，左键双击进行设置。【按住Ctrl 同时滚动滑轮，就设置了 Ctrl+滚轮 的快捷键】
+
+	
+2、整体Goland窗口、左侧目录树font设置
+	Appearance&Behavior ---> Appearance 中的第三行  Use custom font    Size  就是设置的地方。
+
+3、控制台的font设置
+	Editor ----> Color Scheme ----> Console Font
+
+4、光标悬浮显示
+	Editor ---> Code Editing 中的 Quick Documentation就是打开悬浮显示的地方，中的 Editor Tooltips 的毫秒数，就是鼠标悬浮到显示出现的时间间隔。
+
+5、悬浮显示框内的font设置
+	在悬浮框中设置。

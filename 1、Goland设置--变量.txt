@@ -1,0 +1,52 @@
+1、查看Golang环境变量
+     以下这些可以通过在Goland终端输入 go env 回车查看到所有go的环境变量，查某个变量如 go env GOPRIVATE 则仅查看变量 GOPRIVATE，
+2、设置Golang环境变量
+     【最好直接在windows的“系统"--"高级设置”中直接设置GOPROXY GOPRIVATE 这些环境变量以确保是全局的，git bash终端或Goland终
+        端、Goland的setting中设置的不一定生效】
+     2.1、也可以在Goland的setting中设置【推荐这两种途径都设置一下，暂时不确定哪一种设的是全局的】
+     2.2、可以通过在Goland终端输入例如 set GOPROXY=XXX 来设置相应的环境变量，
+     2.3、也可以在git bash 终端输入同样的命令以查看或设置这些变量，作用和Goland终端种输入是一样的。
+
+3、Linux环境时直接在终端输入例如 export GOPRIVATE=XXX   来设置相应的环境变量 ，通过echo $GORPIVATE 来查看特定环境变量。但这种
+     设置只在当前bash中有效，在新开的bash中无效，即相当于是一种伪环境变量，并未真的存储为系统级别或用户级别的全局变量。
+
+set GOPATH=E:\go_gong1zuo4；C:\Users\v_vkangchen\go	//GOPATH的路径，其下是放开发项目的 src 文件夹 和并列的 放第三方依赖包的 pkg 
+set GOROOT=E:\Go					//golang的sdk（含有golang标准库等）存放的位置
+
+set GO111MODULE=on				//打开go module管理依赖，还有 auto 和 off
+set GOARCH=amd64	
+set GOBIN=
+set GOCACHE=C:\Users\v_vjflin\AppData\Local\go-build
+set GOENV=C:\Users\v_vjflin\AppData\Roaming\go\env
+set GOEXE=.exe
+set GOFLAGS=
+set GOHOSTARCH=amd64	
+set GOHOSTOS=windows	
+set GOINSECURE=
+set GOMODCACHE=E:\go_gong1zuo4\pkg\mod		//下载的go modules中所示的那些依赖包存放的地方，其中pkg是和src平级的文件夹
+
+set GONOPROXY=git.code.oa.com,git.woa.com		//从这些网站拉取第三方包时不走 GOPROXY 的代理，即私有的如工蜂就直接访问不需代理网站
+set GONOSUMDB=git.code.oa.com,git.woa.com		//从这些网站拉取第三方包时不校验依赖包是sum
+
+set GOOS=windows					//go build 编译代码后，能够运行在的操作系统  可以更改为 GOOS=linux ，再编译后的代码才能在linux系统运行
+							一般可以在通过git bash 终端执行 go build 编译前 export GOOS=linux一下再编译
+set GOPRIVATE=git.code.oa.com			//指明公司内网私有库网址，即到私有库拉取第三方包时无需代理（GONOPROXY）和校验（GONOSUMDB）。
+set GOPROXY=https://mirrors.tencent.com/go/,direct	//代理网站，一些需要翻墙才能下载的第三方包，就可以通过代理网站下载。默认是 proxy.golang.org，但国内用不了。
+set GOSUMDB=sum.golang.org			//到该网站去验证和下载项目中依赖的第三方包的验证信息存入 go.sum 中。
+set GOTMPDIR=
+set GOTOOLDIR=E:\Go\pkg\tool\windows_amd64
+set GCCGO=gccgo
+set AR=ar
+set CC=gcc
+set CXX=g++
+set CGO_ENABLED=0
+set GOMOD=NUL
+set CGO_CFLAGS=-g -O2
+set CGO_CPPFLAGS=
+set CGO_CXXFLAGS=-g -O2
+set CGO_FFLAGS=-g -O2
+set CGO_LDFLAGS=-g -O2
+set PKG_CONFIG=pkg-config
+
+
+（完）
